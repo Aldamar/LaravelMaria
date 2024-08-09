@@ -20,7 +20,7 @@ services:
         - laravel
 
   db:
-      image: mariadb
+      image: mariadb:lts
       container_name: ${APP_NAME}-mariadb
       restart: unless-stopped
       ports:
